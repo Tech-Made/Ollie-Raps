@@ -1,0 +1,152 @@
+@import './variables.scss';
+
+input:focus {
+    outline:none;
+}
+// TYPOGRAPHY
+.text {
+    font-family: $textfont;
+    font-size: 1.2em;
+    letter-spacing: 0.06em;
+    color: $text;  
+    line-height: 150.3%; 
+}
+
+.title {
+    font-family: $textfont;
+    font-size: 130px;
+    letter-spacing: 0.06em;
+    color: $text;
+    margin: 0em;
+}
+
+.subtitle {
+    font-family: $textfont;
+    color: $text;
+    font-size: 50px;
+    letter-spacing: 0.06em;
+    margin: 0em;
+    // line-height: 150.3%; 
+}
+
+.btn {
+    width: 12em;
+    height: 3em;
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    // font-family: $textfont;
+    cursor: pointer;
+    transition: .2s;
+    &:hover {
+        -webkit-box-shadow: 3px 13px 12px -5px rgba(0,0,0,0.75);
+        -moz-box-shadow: 3px 13px 12px -5px rgba(0,0,0,0.75);
+        box-shadow: 3px 13px 12px -5px rgba(0,0,0,0.75);
+    }
+}
+
+// BUTTONS
+.no-btn {
+    margin-top: 1em;
+}
+
+.btn-primary {
+    width: 229px;
+    height: 46px;
+    background: $primary;
+    color: $secondary;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 800;
+    letter-spacing: 3px;
+    border: none;
+    font-family: $titlefont;
+    cursor: pointer;
+}
+
+.long-btn {
+    width: 12em;
+    height: 3em;
+    border: none;
+    color: $primary;
+    background-color: $secondary;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    font-weight: 100;
+    margin-left: 2em;
+    // font-family: $textfont;
+    cursor: pointer;
+    transition: .2s;
+    &:hover {
+        -webkit-box-shadow: 3px 13px 12px -5px rgba(0,0,0,0.75);
+        -moz-box-shadow: 3px 13px 12px -5px rgba(0,0,0,0.75);
+        box-shadow: 3px 13px 12px -5px rgba(0,0,0,0.75);
+    }
+}
+
+// EFFECTS
+
+$animate: all 0.2s ease-in-out;
+
+.hover-data {
+    .hover1 {
+        text-align: center;
+        margin: 0 auto;
+        padding: 0;
+        transition: $animate;
+        position: relative;
+        &:before,
+        &:after {
+          content: "";
+          position: absolute;
+          bottom: 14px;
+          width: 0px;
+          height: 3px;
+          margin: 5px 0 0;
+          transition: $animate;
+          transition-duration: 0.75s;
+          opacity: 0;
+          background-color: $text;
+        }
+        &.hover1-1 {
+            &:before,
+            &:after {
+                left: 0;
+            }
+        }
+    }
+    &:hover {
+        cursor: pointer;
+        .hover1 {
+          &:before,
+          &:after {
+            width: 100%;
+            opacity: 1;
+          }
+        }
+    }
+    .hover2 {
+        @extend .hover1;
+        &:before,
+        &:after {
+          transition-duration: 1s;
+        }
+    }
+}
+
+
+@media screen and (max-width:480px) {
+    .btn {
+        width: 12em;
+        height: 2.8em;
+        border: none;
+        color: white;
+        font-size: 1.1em;
+        letter-spacing: 1px; 
+        cursor: pointer;
+        transition: .2s;
+        margin-bottom: 1.2em; 
+    }
+
+}

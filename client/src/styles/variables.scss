@@ -1,0 +1,26 @@
+$gray: #F4F4F4;
+$light: rgba(255, 255, 255, 0.7);
+$secondary: #F3F3F3;
+$text: #ffffff;
+$primary: #090909;
+
+@font-face {
+    font-family: 'Scheherazade-Bold';
+    src: url('../assets/fonts/scheherazade/Scheherazade-Bold.ttf');
+}
+  
+@font-face {
+    font-family: 'Scheherazade-Regular';
+    src: url('../assets/fonts/scheherazade/Scheherazade-Regular.ttf');
+}
+  
+@font-face {
+    font-family: 'RobotoBlackItalic';
+    src: url('../assets/fonts/Roboto/Roboto-BlackItalic.ttf');
+} 
+  
+$textfont: 'Scheherazade-Regular', serif;
+$titlefont: 'Scheherazade-Bold', serif;
+
+$bigslantfont: 'RobotoBlackItalic', serif;
+

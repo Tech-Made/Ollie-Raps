@@ -1,0 +1,266 @@
+@import './variables.scss';
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 300px) and (max-device-width : 767px) {
+  .home {
+    .arrow-container {
+      position: relative;
+      margin: 0 auto;
+      text-align: center;
+      .homeArrow {
+        position: absolute;
+        top: 90vh;
+      }
+    }
+    .top-section {
+      margin-bottom: 4em;
+      .top {
+        position: relative;
+        .title {
+          position: absolute;
+          width: 7em;
+          font-size: 50px;
+          margin-top: 0.16em;
+          left: 12%;
+        }
+        .slogan {
+          position: absolute;
+          width: 7em;
+          font-size: 28px;
+          margin-top: 2.36em;
+          left: 12%;
+        }
+      }
+      .top-sides {
+        display: block;
+        .homebg {
+          height: 80vh;
+          margin-top: 20vh;
+        }
+        .menu {
+          position: relative;
+          .menu-items {
+            position: absolute;
+            left: 12%;
+            margin-top: -22em;
+            a div .subtitle {
+              font-size: 40px;
+            }
+          }
+        }
+      }
+    }
+  
+    .item-cross-section {
+      flex-direction: column-reverse;
+      padding-top: 4em;
+      margin-bottom: 4em;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      .tourbg {
+        width: 90vw;
+      }
+      .info {
+        margin-top: 1em;
+        text-align: center;
+        .subtitle {
+          font-size: 28px;
+          margin-bottom: .6em;
+        }
+        .tourlink {
+          font-size: 30px;
+          font-family: $bigslantfont;
+          color: #6A8788;
+          cursor: pointer;
+        }
+      }
+      .flip-section {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1099px) {
+  .home {
+    .arrow-container {
+      position: relative;
+      margin: 0 auto;
+      text-align: center;
+      .homeArrow {
+        position: absolute;
+        top: 90vh;
+      }
+    }
+    .top-section {
+      margin-bottom: 5em;
+      .top {
+        position: relative;
+        .title {
+          position: absolute;
+          width: 7em;
+          margin-top: -14px;
+          left: 12%;
+        }
+        .slogan {
+          position: absolute;
+          width: 7em;
+          margin-top: 128px;
+          left: 12%;
+        }
+      }
+      .top-sides {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        .homebg {
+          height: 62vh;
+        }
+        .menu {
+          position: relative;
+          .menu-items {
+            margin-top: 0em;
+            position: absolute;
+            margin-left: -3em;
+          }
+        }
+      }
+    }
+  
+    .item-cross-section {
+      flex-direction: column-reverse;
+      padding-top: 3em;
+      margin-bottom: 5em;    
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      .tourbg {
+        width: 43vw;
+      }
+      .info {
+        text-align: center;
+        margin-bottom: 4em;
+        .tourlink {
+          font-size: 50px;
+          font-family: $bigslantfont;
+          color: #6A8788;
+          cursor: pointer;
+        }
+      }
+      .flip-section {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1100px) {
+  .home {
+    .arrow-container {
+      position: relative;
+      margin: 0 auto;
+      text-align: center;
+      .homeArrow {
+        position: absolute;
+        top: 90vh;
+      }
+    }
+    .top-section {
+      margin-bottom: 5em;
+      .top {
+        position: relative;
+        .title {
+          position: absolute;
+          width: 7em;
+          margin-top: -14px;
+          left: 52%;
+        }
+        .slogan {
+          position: absolute;
+          width: 7em;
+          margin-top: 128px;
+          left: 52%;
+        }
+      }
+      .top-sides {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .homebg {
+          height: 100vh;
+        }
+        .menu {
+          margin-right: 6vw;
+          margin-bottom: 2em;
+        }
+      }
+    }
+  
+    .item-cross-section {
+      margin-bottom: 12em;    
+      padding-top: 7em;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      .tourbg {
+        width: 43vw;
+      }
+      .info {
+        text-align: center;
+        margin-bottom: 4em;
+        .tourlink {
+          font-size: 50px;
+          font-family: $bigslantfont;
+          color: #6A8788;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+  .home {
+    .arrow-container {
+      position: relative;
+      margin: 0 auto;
+      text-align: center;
+      .homeArrow {
+        position: absolute;
+        top: 90vh;
+      }
+    }
+    .top-section {
+      margin-bottom: 5em;
+      .top {
+        position: relative;
+        .title {
+          position: absolute;
+          width: 7em;
+          margin-top: -14px;
+          left: 52%;
+        }
+        .slogan {
+          position: absolute;
+          width: 7em;
+          margin-top: 128px;
+          left: 52%;
+        }
+      }
+      .top-sides {
+        .menu {
+          margin-right: 10vw;
+          margin-bottom: 2em;
+          .menu-items a div p {
+            font-size: 4.2em;
+          }
+        }
+      }
+
+    }
+  }
+}
