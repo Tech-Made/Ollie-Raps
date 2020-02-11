@@ -1,0 +1,105 @@
+@import './variables.scss';
+
+@-webkit-keyframes slide {
+    0% { left: -200%; }
+    100% { left: 100; }
+}
+
+@keyframes slide {
+    0% { left: -200%; }
+    100% { left: 100; }
+}
+
+.new-container {
+    position: relative;
+    .new {
+        cursor: pointer;
+        position: absolute;
+        height: 96px;
+        width: 331px;
+        display: flex;
+        left: 54vw;
+        top: 64vh;
+        -webkit-animation: slide 2s forwards;
+        animation: slide 2s forwards;
+        transition: box-shadow 0.3s ease-in-out;
+        &:hover {
+            -webkit-box-shadow: 10px 10px 16px -9px rgba(255,255,255,1);
+            -moz-box-shadow: 10px 10px 16px -9px rgba(255,255,255,1);
+            box-shadow: 10px 10px 16px -9px rgba(255,255,255,1);   
+        } 
+        img {
+            width: 96px;
+        }
+        .content {
+            background-color: white;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding-left: 1em;
+            p {
+                font-size: 32px;
+                margin: 0;
+                font-family: $textfont;
+            }
+        }
+    }
+}
+
+@media only screen  and (min-width : 1824px) {
+    .new-container {
+        position: relative;
+        .new {
+            cursor: pointer;
+            position: absolute;
+            height: 96px;
+            width: 331px;
+            display: flex;
+            left: 54vw;
+        }
+    }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1099px) {
+    .new-container {
+        position: relative;
+        .new {
+            cursor: pointer;
+            position: absolute;
+            height: 96px;
+            width: 331px;
+            display: flex;
+            left: 10%;
+            top: 50 vh;
+            &:hover {
+                // animation: front 1s linear forwards;
+                -webkit-box-shadow: 5px 3px 19px 2px rgba(255,255,255,1);
+                -moz-box-shadow: 5px 3px 19px 2px rgba(255,255,255,1);
+                box-shadow: 5px 3px 19px 2px rgba(255,255,255,1);
+            } 
+            img {
+                width: 96px;
+            }
+            .content {
+                background-color: white;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                padding-left: 1em;
+                p {
+                    font-size: 36px;
+                    margin: 0;
+                    font-family: $textfont;
+                }
+            }
+        }
+
+    }
+
+}
+
+@media only screen and (min-device-width : 300px) and (max-device-width : 767px) {
+    .new-container {
+        display: none;
+    }
+}

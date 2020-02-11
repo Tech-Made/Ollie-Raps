@@ -40,11 +40,11 @@ const Stream = () => {
   const res = [
     {
       art: art0,
-      name: 'Broken Down',
+      name: 'song',
       spotifyUrl: '',
       applemusicUrl: '',
       soundcloudUrl: '',
-      youtubeUrl: '',
+      youtubeUrl: ''
     },
     {
       art: art1,
@@ -52,7 +52,7 @@ const Stream = () => {
       spotifyUrl: '',
       applemusicUrl: '',
       soundcloudUrl: '',
-      youtubeUrl: '',
+      youtubeUrl: ''
     },
     {
       art: art101,
@@ -60,7 +60,7 @@ const Stream = () => {
       spotifyUrl: '',
       applemusicUrl: '',
       soundcloudUrl: '',
-      youtubeUrl: '',
+      youtubeUrl: ''
     },
     {
       art: art2,
@@ -68,7 +68,7 @@ const Stream = () => {
       spotifyUrl: '',
       applemusicUrl: '',
       soundcloudUrl: '',
-      youtubeUrl: '',
+      youtubeUrl: ''
     },
     {
       art: art3,
@@ -76,7 +76,7 @@ const Stream = () => {
       spotifyUrl: '',
       applemusicUrl: '',
       soundcloudUrl: '',
-      youtubeUrl: '',
+      youtubeUrl: ''
     },
     {
       art: art4,
@@ -84,7 +84,7 @@ const Stream = () => {
       spotifyUrl: '',
       applemusicUrl: '',
       soundcloudUrl: '',
-      youtubeUrl: '',
+      youtubeUrl: ''
     },
     {
       art: art5,
@@ -92,7 +92,7 @@ const Stream = () => {
       spotifyUrl: '',
       applemusicUrl: '',
       soundcloudUrl: '',
-      youtubeUrl: '',
+      youtubeUrl: ''
     },
     {
       art: art6,
@@ -100,7 +100,7 @@ const Stream = () => {
       spotifyUrl: '',
       applemusicUrl: '',
       soundcloudUrl: '',
-      youtubeUrl: '',
+      youtubeUrl: ''
     },
     {
       art: art7,
@@ -108,7 +108,7 @@ const Stream = () => {
       spotifyUrl: '',
       applemusicUrl: '',
       soundcloudUrl: '',
-      youtubeUrl: '',
+      youtubeUrl: ''
     },
     {
       art: art8,
@@ -116,7 +116,7 @@ const Stream = () => {
       spotifyUrl: '',
       applemusicUrl: '',
       soundcloudUrl: '',
-      youtubeUrl: '',
+      youtubeUrl: ''
     },
     {
       art: art9,
@@ -124,7 +124,7 @@ const Stream = () => {
       spotifyUrl: '',
       applemusicUrl: '',
       soundcloudUrl: '',
-      youtubeUrl: '',
+      youtubeUrl: ''
     },
     {
       art: art10,
@@ -132,7 +132,7 @@ const Stream = () => {
       spotifyUrl: '',
       applemusicUrl: '',
       soundcloudUrl: '',
-      youtubeUrl: '',
+      youtubeUrl: ''
     },
     {
       art: art11,
@@ -140,8 +140,8 @@ const Stream = () => {
       spotifyUrl: '',
       applemusicUrl: '',
       soundcloudUrl: '',
-      youtubeUrl: '',
-    },
+      youtubeUrl: ''
+    }
   ]
 
   return (
@@ -155,14 +155,14 @@ const Stream = () => {
 
         <div className='songs'>
           {
-            res.slice(0, res.length - 2).map((song, index) => {
+            res.slice(0, res.length -1).map((song, index) => {
               const _song = {
-                art: song.art,
-                name: song.name,
-                spotifyUrl: song.spotifyUrl,
-                applemusicUrl: song.applemusicUrl,
-                soundcloudUrl: song.soundcloudUrl,
-                youtubeUrl: song.youtubeUrl
+                art: res[index].art,
+                name: res[index].name,
+                spotifyUrl: res[index].spotifyUrl,
+                applemusicUrl: res[index].applemusicUrl,
+                soundcloudUrl: res[index].soundcloudUrl,
+                youtubeUrl: res[index].youtubeUrl
               }
               const nextSong = {
                 art: res[index+1].art,
@@ -172,7 +172,9 @@ const Stream = () => {
                 soundcloudUrl: res[index+1].soundcloudUrl,
                 youtubeUrl: res[index+1].youtubeUrl
               }
-
+              if (index % 2 !== 0) {
+                return null;
+              }
               return (
                 <div className='song-container'>
                   <img onClick={
@@ -181,7 +183,7 @@ const Stream = () => {
                   <img
                     onClick={
                       () => openDisplay(nextSong)}
-                    className='right' src={res[index+1].art} alt={res[index+1].name}
+                    className='right' src={nextSong.art} alt={nextSong.name}
                   />
                 </div>
               )
@@ -193,10 +195,11 @@ const Stream = () => {
       <Modal
         open={open}
         onClose={() => setOpen(false)}
-        className='display'
+        // className='display'
       >
         <>
         <img onClick={() => setOpen(false)} className='close' src={close} alt='X'/>
+        <div className='display'>
           <div className='left'>
             <div className='hover-data'>
               <h1 className='hover1 hover1-1 subtitle'>{data.name}</h1>
@@ -224,6 +227,7 @@ const Stream = () => {
           </div>
         <div onClick={() => {}} className='right'>
           <img className='artwork' src={data.art} alt='More Than Music'/>
+        </div>
         </div>
         </>
       </Modal>

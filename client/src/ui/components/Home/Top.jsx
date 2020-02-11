@@ -1,10 +1,12 @@
 import React from 'react';
 import HomeBg from '../../../assets/images/homebg.jpg';
+import New from '../New';
 import { Link } from 'react-router-dom';
 
 const Top = () => {
     return (
         <div className='top-section'>
+            <New/>
             <div className='top'>
                 <p className='title'>Ollie</p>
                 <p className='subtitle slogan'>More Than Music.</p>
