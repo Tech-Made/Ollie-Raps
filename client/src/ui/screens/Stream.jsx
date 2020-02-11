@@ -40,15 +40,15 @@ const Stream = () => {
   const res = [
     {
       art: art0,
-      name: 'song',
-      spotifyUrl: '',
-      applemusicUrl: '',
-      soundcloudUrl: '',
-      youtubeUrl: ''
+      name: 'Twenty Four EP',
+      spotifyUrl: 'https://open.spotify.com/album/3USUE5q6KICToSTyrepBen?si=sVan5XnEQ9mqChRDE3GJdg',
+      applemusicUrl: 'https://music.apple.com/album/twenty-four-ep/1495088883?app=music',
+      soundcloudUrl: 'https://soundcloud.com/olly-raps/sets/twenty-four-ep',
+      youtubeUrl: 'https://youtu.be/ocTpDEcB5tg'
     },
     {
       art: art1,
-      name: 'song',
+      name: 'Broken Down',
       spotifyUrl: '',
       applemusicUrl: '',
       soundcloudUrl: '',
@@ -56,7 +56,7 @@ const Stream = () => {
     },
     {
       art: art101,
-      name: 'song',
+      name: 'Stuck',
       spotifyUrl: '',
       applemusicUrl: '',
       soundcloudUrl: '',
@@ -64,7 +64,7 @@ const Stream = () => {
     },
     {
       art: art2,
-      name: 'song',
+      name: 'Better Me',
       spotifyUrl: '',
       applemusicUrl: '',
       soundcloudUrl: '',
@@ -72,7 +72,7 @@ const Stream = () => {
     },
     {
       art: art3,
-      name: 'song',
+      name: 'Leave Me Alone',
       spotifyUrl: '',
       applemusicUrl: '',
       soundcloudUrl: '',
@@ -80,7 +80,7 @@ const Stream = () => {
     },
     {
       art: art4,
-      name: 'song',
+      name: 'Lost. EP',
       spotifyUrl: '',
       applemusicUrl: '',
       soundcloudUrl: '',
@@ -88,7 +88,7 @@ const Stream = () => {
     },
     {
       art: art5,
-      name: 'song',
+      name: 'Love Sick',
       spotifyUrl: '',
       applemusicUrl: '',
       soundcloudUrl: '',
@@ -96,7 +96,7 @@ const Stream = () => {
     },
     {
       art: art6,
-      name: 'song',
+      name: 'Need Someone',
       spotifyUrl: '',
       applemusicUrl: '',
       soundcloudUrl: '',
@@ -104,7 +104,7 @@ const Stream = () => {
     },
     {
       art: art7,
-      name: 'song',
+      name: 'Better With You',
       spotifyUrl: '',
       applemusicUrl: '',
       soundcloudUrl: '',
@@ -112,7 +112,7 @@ const Stream = () => {
     },
     {
       art: art8,
-      name: 'song',
+      name: 'Outsider',
       spotifyUrl: '',
       applemusicUrl: '',
       soundcloudUrl: '',
@@ -120,7 +120,7 @@ const Stream = () => {
     },
     {
       art: art9,
-      name: 'song',
+      name: 'Casket',
       spotifyUrl: '',
       applemusicUrl: '',
       soundcloudUrl: '',
@@ -128,7 +128,7 @@ const Stream = () => {
     },
     {
       art: art10,
-      name: 'song',
+      name: 'Almost',
       spotifyUrl: '',
       applemusicUrl: '',
       soundcloudUrl: '',
@@ -205,22 +205,22 @@ const Stream = () => {
               <h1 className='hover1 hover1-1 subtitle'>{data.name}</h1>
             </div>
             <div className='hover-data'>
-              <a className='hover1 hover1-1' href='https://spotify.com'>
+              <a className='hover1 hover1-1' href={data.spotifyUrl}>
                 <img src={spotify} alt='spotify'/>
               </a>
             </div>
             <div className='hover-data'>
-              <a className='hover1 hover1-1' href='https://youtube.com'>
+              <a className='hover1 hover1-1' href={data.applemusicUrl}>
                 <img src={apple} alt='apple'/>
               </a>
             </div>
             <div className='hover-data'>
-              <a className='hover1 hover1-1' href='https://youtube.com'>
+              <a className='hover1 hover1-1' href={data.soundcloudUrl}>
                 <img className='hover1 hover1-1' src={soundcloud} alt='soundcloud'/>
               </a>
             </div>
             <div className='hover-data'>
-              <a className='hover1 hover1-1' href='https://youtube.com'>
+              <a className='hover1 hover1-1' href={data.youtubeUrl}>
                 <img className='hover1 hover1-1' src={youtube} alt='youtube'/>
               </a>
             </div>

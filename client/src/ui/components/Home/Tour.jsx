@@ -1,14 +1,24 @@
 import React from 'react';
-import TourBg from '../../../assets/images/tourbg.jpg';
 
-const Tour = () => {
+const Tour = ({
+    linkColor,
+    title,
+    linkDisplay,
+    url,
+    bg
+}) => {
+
+    var linkStyle = {
+        color: linkColor,
+    };
+
     return (
         <div id='tour' className='item-cross-section'>
             <div className='info'>
-                <p className='subtitle'>Love Yourself Tour Tickets.</p>
-                <a className='tourlink' target='_blank' href='https://officialphora.com/'>OFFICIALPHORA.COM</a>
+                <p className='subtitle'>{title}</p>
+                <a className='tourlink' style={linkStyle} target='_blank' href={url}>{linkDisplay}</a>
             </div>
-            <img className='tourbg' src={TourBg} alt='Tour Flier'/>
+            <img className='tourbg' src={bg} alt='Tour Flier'/>
         </div>
     )
 }

@@ -32,14 +32,14 @@ const NavBar = () => {
                         </li>
                         <li><a href='/' className="header-text hover">Home</a></li>
                         <li><a href='/stream' className="header-text hover">Stream</a></li>
-                        <li><a href='/contact' className="header-text hover">Contact</a></li>
+                        {/* <li><a href='/contact' className="header-text hover">Contact</a></li> */}
                         <div className='nav-socials'>
                             <li>
                                 <a
                                     className='igIcon'
                                     rel='noopener noreferrer'
                                     target='_blank'
-                                    href='https://instagram.com/the_groveaurora'>
+                                    href='https://www.instagram.com/ollie_raps/'>
                                     <FontAwesomeIcon
                                         icon={faInstagram}
                                         size="2x"
@@ -51,7 +51,7 @@ const NavBar = () => {
                                     className='igIcon'
                                     rel='noopener noreferrer'
                                     target='_blank'
-                                    href='https://instagram.com/the_groveaurora'>
+                                    href='https://twitter.com/ollie_raps'>
                                     <FontAwesomeIcon
                                         icon={faTwitter }
                                         size="2x"
@@ -63,7 +63,7 @@ const NavBar = () => {
                                     className='igIcon'
                                     rel='noopener noreferrer'
                                     target='_blank'
-                                    href='https://instagram.com/the_groveaurora'>
+                                    href='https://www.facebook.com/OllieRaps/'>
                                     <FontAwesomeIcon
                                         icon={faFacebook}
                                         size="2x"

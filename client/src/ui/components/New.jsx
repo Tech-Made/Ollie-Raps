@@ -27,22 +27,22 @@ const New = () => {
                         <h1 className='hover1 hover1-1 subtitle'>Twenty Four</h1>
                         </div>
                         <div className='hover-data'>
-                        <a className='hover1 hover1-1' href='https://spotify.com'>
+                        <a className='hover1 hover1-1' target='_blank' href='https://open.spotify.com/album/3USUE5q6KICToSTyrepBen?si=sVan5XnEQ9mqChRDE3GJdg'>
                             <img src={spotify} alt='spotify'/>
                         </a>
                         </div>
                         <div className='hover-data'>
-                        <a className='hover1 hover1-1' href='https://youtube.com'>
+                        <a className='hover1 hover1-1' target='_blank' href='https://music.apple.com/album/twenty-four-ep/1495088883?app=music'>
                             <img src={apple} alt='apple'/>
                         </a>
                         </div>
                         <div className='hover-data'>
-                        <a className='hover1 hover1-1' href='https://youtube.com'>
+                        <a className='hover1 hover1-1' target='_blank' href='https://soundcloud.com/olly-raps/sets/twenty-four-ep'>
                             <img className='hover1 hover1-1' src={soundcloud} alt='soundcloud'/>
                         </a>
                         </div>
                         <div className='hover-data'>
-                        <a className='hover1 hover1-1' href='https://youtube.com'>
+                        <a className='hover1 hover1-1' target='_blank' href='https://youtu.be/ocTpDEcB5tg'>
                             <img className='hover1 hover1-1' src={youtube} alt='youtube'/>
                         </a>
                         </div>
